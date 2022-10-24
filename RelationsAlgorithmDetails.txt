@@ -1,0 +1,18 @@
+﻿DETAILS OF EDGE RELATIONS IMPLEMENTATION:
+
+Each edge has two vertices: v1, v2.
+
+1) Fixed length relation
+When edge has fixed length, after movement of one of its vertices to new position, new vector v1v2 is calculated an then normalized. 
+After that the other vertex (the one that has not been moved so far) position is calculated by adding/subtracting the result of (normalized vector)*(fixed length).
+
+2) Parallel relation
+When one of the edges (e1) that are parallel to each other is moved, the other's (e2) position is beeing calculated as follows:
+	a) its new vector v1v2 is calculated by multiplying normalized vecotr of e1 and lenght of e2. (e1.NormalizedVector * e2.Length).
+	b) then depending if e1 and e2 vectors were in the same or different directions either v1 or v2 is moved to correct position based on new vector and the other vertex. 
+
+3) Triggering realtion enforcing
+a) Each vertex movement triggers relation enforcing on neighbouring edges.
+b) Each edge relation enforcing triggered by one of the vertices marks the edge as already modified and triggers relation enforcing on neighbouring edge form another vertex.
+c) If edge is already modified it does not trigger further relation enforcing.
+d) Additionaly relation enforcing on one of the parallel edges triggers enforcing on the other parallel edge.

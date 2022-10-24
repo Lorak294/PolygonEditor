@@ -1,0 +1,41 @@
+ADDING NEW POLYGON
+Click the new polygon button and then left click on the drawarea to add its vertices. To complete the polygon click on the first vertex.
+
+
+EDITING POLYGON
+
+- EDGE/VERTEX MOVEMENT 			
+Left click on vertex/edge and drag it to new position.
+	
+- POLYGON MOVEMENT			
+Left click inside the polygon and drag it to new position.
+	
+- ADDING NEW VERTEX ON THE EDGE
+Right click on selected edge to add a new vertex.
+	
+- DELETING VERTEX 				
+Right click on vertex to delete it. If polygon has only 3 vertices, this action will delete whole polygon.
+	
+- DELETING POLYGON				
+Right click inide polygon to delete it.
+
+
+ADDING RELATIONS 
+
+- PARALLEL EDGES
+To make two edges parallel click the "Parallelity" button and then select two edges by left-clicking them.
+
+- FIXED LENGTH ON EDGE
+To make the length of an edge fixed click on the "Fixed length: button and then on edge that should be affected. You will have to provide desired lenght  in pop-up window.
+
+
+DELETING RELATIONS
+To delete realtions on edges click the "Delete relation" button and then select edge to be affected.
+
+NOTES:
+1) You can generate predefined scene with some polygons and relations using "Generate predefined scene" button.
+2) One edge can have only one relation.
+3) Deleting vertex deletes relations on edges connected to it.
+4) Adding vertex on edges deletes relations on present on the edges.
+5) Behaviour after adding irrational limitations (for example lengths that do not meet the Triangle Condition) is undefined.
+	
